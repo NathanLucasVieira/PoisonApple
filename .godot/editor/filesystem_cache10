@@ -1,0 +1,81 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792021622
+default_bus_layout.tres::AudioBusLayout::976924742847473013::1789131646::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::8707911841247091768::1780150760::1780151412::1::::<><><>0<>0<>4c81cae1a1b7c743b5f79cab4a1cedf8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.s3tc.ctex::
+::res://addons/::1792021391
+::res://addons/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/::1792021391
+plugin.cfg::TextFile::-1::1792021391::0::1::::<><><>0<>0<><>::
+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.cs::CSharpScript::7326779474978848033::1792021391::0::1::::<><><>0<>0<><>::
+::res://cenas/::1789473589
+escada.tscn::PackedScene::6704938981359547813::1788125256::0::1::::<><><>0<>0<><>::uid://ijumdkukp1oy::::res://texturas/madeiranova.jpg
+taverna.tscn::PackedScene::4600969558329124985::1789473589::0::1::::<><><>0<>0<><>::uid://c2r6mooo04yh6::::res://cenas/escada.tscn<>uid://cghqktaqvea4b::::res://materiais/taverna_material.tres
+::res://font/::1788953644
+trebuc.ttf::FontFile::5957680794043598097::1399428356::1788953644::1::::<><><>0<>0<>84729d8d5eb6c761d79bec279a4b621f<>res://.godot/imported/trebuc.ttf-abf7a72637f8acbb235ddcc71ac83b47.fontdata::
+Trebuchet-MS-Italic.ttf::FontFile::2240447578860102227::1551830418::1788953644::1::::<><><>0<>0<>3313daf96a0bcbabf562422a6f661012<>res://.godot/imported/Trebuchet-MS-Italic.ttf-3ff218b567f60e5c7fd51e38581f69b4.fontdata::
+::res://glb_models/::1790076047
+bottle.glb::PackedScene::8951531586218367219::1789474090::1790076047::1::::<><><>0<>0<>9fff5924bc0a447b871dc8e85aaf8dfc<>res://.godot/imported/bottle.glb-2f6af63080ba0e7e1fb25e684a681be0.scn::uid://cxgwvltqvou7g::::res://glb_models/bottle_Bar Set Base Color.png
+bottle_Bar Set Base Color.png::CompressedTexture2D::6400944920961910422::1790075981::1790075983::1::::<><><>0<>0<>04b1e406df2d8ce63163b1ec9814fe79<>res://.godot/imported/bottle_Bar Set Base Color.png-cb0a105bf2ef7787b7e8a153f5b61dcc.s3tc.ctex::
+escada.glb::PackedScene::7930255439753514352::1780256874::1780256877::1::::<><><>0<>0<>6b8b61dd49c470f5c289d05f4fd799bb<>res://.godot/imported/escada.glb-2d821dfead212a4fb8c38c50e0c4ea79.scn::
+knife.glb::PackedScene::5424579108769201240::1789474053::1789474328::1::::<><><>0<>0<>bba79f58749c6199ce0f1ba36026ffaa<>res://.godot/imported/knife.glb-72fecd05785e639632b44f46ae0b7931.scn::uid://benryillr6cku::::res://glb_models/knife_Bar Set Base Color.png
+knife_Bar Set Base Color.png::CompressedTexture2D::2695088454682133272::1789474326::1790076043::1::::<><><>0<>0<>5e47a304199cd4fd93d3685da48c1168<>res://.godot/imported/knife_Bar Set Base Color.png-e593258ab633b6b1aa45faa73be7206f.s3tc.ctex::
+RoundTable1.glb::PackedScene::2017657173802293875::1788027284::1788027296::1::::<><><>0<>0<>a015c795d6d350e3f99b41caf063a21d<>res://.godot/imported/RoundTable1.glb-76f189bb5fa3150520cd180b9186f081.scn::
+RoundTable2.glb::PackedScene::6522826965235908196::1788027751::1788027755::1::::<><><>0<>0<>ad461e615cb41e87da93f1042167d850<>res://.godot/imported/RoundTable2.glb-dd02b264da362527790d9c619f5d2a71.scn::
+RoundTable3.glb::PackedScene::8144318003937385250::1788028008::1788028031::1::::<><><>0<>0<>0cc2009fa5de9a6555dc8fd688934029<>res://.godot/imported/RoundTable3.glb-9a03a5186eec14cbecc2542b0997689a.scn::
+RoundTable4.glb::PackedScene::578913134366993639::1788028027::1788028031::1::::<><><>0<>0<>1f751801a6b601d1a0a6e673b46072cf<>res://.godot/imported/RoundTable4.glb-ce7dd9352ff4d44424232a9ab72af520.scn::
+simplebarrel.glb::PackedScene::3401096902338069660::1788124897::1788124902::1::::<><><>0<>0<>d7c86dc008a753ccf0a9ee156c889c9b<>res://.godot/imported/simplebarrel.glb-249ffde7b0881dd93527c0340103ace9.scn::uid://buu80rfwhlqvm::::res://glb_models/simplebarrel_barrel_color.png<>uid://bdwlwqvx3lefl::::res://glb_models/simplebarrel_barrel_normal.png
+simplebarrel_barrel_color.png::CompressedTexture2D::3833534318774219742::1788124900::1788124904::1::::<><><>0<>0<>fd95a4685539ad63a39e75b5dd36204e<>res://.godot/imported/simplebarrel_barrel_color.png-f9019f2e802e3591bdff25dd6fd312ef.s3tc.ctex::
+simplebarrel_barrel_normal.png::CompressedTexture2D::2643111573480216445::1788124899::1788124904::1::::<><><>0<>0<>264e4772832b62c75e24552e70083ec5<>res://.godot/imported/simplebarrel_barrel_normal.png-beccca91e9a3bcf73b6fc4e13b408348.s3tc.ctex::
+SquareTable.glb::PackedScene::4241532876021284929::1788026794::1788026799::1::::<><><>0<>0<>c9e89349589d3c2037fc2a976d03a0b1<>res://.godot/imported/SquareTable.glb-65e7aa0b807d1326205bd0c2e759b3d7.scn::
+taverna.glb::PackedScene::1454255962164817150::1780255639::1780255735::1::::<><><>0<>0<>9ab70c9230f98e10a61eebaa641b9559<>res://.godot/imported/taverna.glb-97d017e32defd9b04250ae5157708574.scn::
+wodenChair.glb::PackedScene::9054528762815507272::1788126538::1788126546::1::::<><><>0<>0<>6b708b25ee376a6a6e8633daa294287d<>res://.godot/imported/wodenChair.glb-20fbdbcc79195948fd63a381aa73ba98.scn::uid://hp2vb47mgv5b::::res://glb_models/wodenChair_Bar Set Base Color.png
+wodenChair_Bar Set Base Color.png::CompressedTexture2D::523964531046729601::1788126544::1788126546::1::::<><><>0<>0<>d787adb63d72aee443f74455fd6096db<>res://.godot/imported/wodenChair_Bar Set Base Color.png-ca6832cdb6dcfe4bca94adf9554d15e1.s3tc.ctex::
+wodenMug.glb::PackedScene::9157752706417635147::1788126369::1788126377::1::::<><><>0<>0<>a5abb66709f7154346c1a2b12f8f3fe9<>res://.godot/imported/wodenMug.glb-e98f503714a7e3217617a44345082165.scn::uid://hvvf5fc6vcc4::::res://glb_models/wodenMug_Bar Set Base Color.png
+::res://mapas/::1790083401
+Mapa.tscn::PackedScene::5435886639656504870::1790083401::0::1::::<><><>0<>0<><>::uid://cckdkljm0j1eb::::res://ui/EnvironmentSettingsApplier.cs<>uid://dwcgbhmo1m6wq::::res://icon.svg<>uid://b6s0kcwk4f2kb::::res://cenas/taverna.tscn<>uid://r8qnwksfvgse::::res://player/player.tscn<>uid://c8gyh5tcqqccv::::res://props/square_table.tscn<>uid://dtlcl7kxrlnle::::res://props/simplebarrel.tscn<>uid://c57n6msacmww2::::res://props/woden_chair.tscn<>uid://bvotfjf0f2w8m::::res://props/woden_mug.tscn<>uid://btmflymedx1vh::::res://props/round_table_4.tscn<>uid://cd5kdanrghw8e::::res://props/bottle.tscn<>uid://ceojww2du3fuw::::res://props/knife.tscn
+::res://materiais/::1788953627
+taverna_material2.tres::StandardMaterial3D::1911637233756717717::1788023671::0::1::::<><><>0<>0<><>::
+taverna_material.tres::StandardMaterial3D::5209415402014968011::1788023671::0::1::::<><><>0<>0<><>::uid://ijumdkukp1oy::::res://texturas/madeiranova.jpg
+::res://materiais/font/::1788953628
+trebuc.ttf::FontFile::2028113972087722723::1788953627::1788953628::1::::<><><>0<>0<>9124b7f98d13346cf8d4d326bac59b96<>res://.godot/imported/trebuc.ttf-9cf7fda96eafbb61b29b20ebb82dd7eb.fontdata::
+Trebuchet-MS-Italic.ttf::FontFile::3119108769399198738::1788953627::1788953628::1::::<><><>0<>0<>181062832806c9c0fbc938862aa34a67<>res://.godot/imported/Trebuchet-MS-Italic.ttf-4d6e536287c16fb6ddbf014d6d5761dc.fontdata::
+::res://player/::1790084753
+FpCam.cs::CSharpScript::2483416592350973252::1790084753::0::1::::<>Node3D<><>0<>0<><>::
+Player.cs::CSharpScript::1974532925266233335::1780152122::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::1262330666722649784::1790083903::0::1::::<><><>0<>0<><>::uid://3eqjey1eh2vj::::res://player/Player.cs<>uid://bbm8rj05pb7ga::::res://player/FpCam.cs<>uid://coycomyun21ki::::res://player/PlayerInteract.cs
+PlayerInteract.cs::CSharpScript::5805177347798971756::1788132589::0::1::::<>RayCast3D<><>0<>0<><>::
+::res://props/::1790076136
+bottle.tscn::PackedScene::5045951779094651190::1790076136::0::1::::<><><>0<>0<><>::uid://cxgwvltqvou7g::::res://glb_models/bottle_Bar Set Base Color.png
+knife.tscn::PackedScene::5083084968283536786::1789474309::0::1::::<><><>0<>0<><>::uid://ke55mh0eoxoc::::res://props/knife_Bar Set Base Color.png
+knife_Bar Set Base Color.png::CompressedTexture2D::712021673232344650::1789474096::1789744994::1::::<><><>0<>0<>331f6fe89ecb4f944f2b802ac7d68d20<>res://.godot/imported/knife_Bar Set Base Color.png-1cdc74562ff9fd8bf9254a478b6bee4f.s3tc.ctex::
+porta.tscn::PackedScene::3166240443570207386::1788880680::0::1::::<><><>0<>0<><>::uid://gxkywbhg6qhd::::res://scripts/Porta.cs<>uid://ijumdkukp1oy::::res://texturas/madeiranova.jpg<>uid://we2lxkobfyj3::::res://texturas/madeira_navio_preto.png
+round_table_1.tscn::PackedScene::5848294697091609282::1788027436::0::1::::<><><>0<>0<><>::uid://30mrv2vqsf8n::::res://glb_models/RoundTable1.glb<>uid://ijumdkukp1oy::::res://texturas/madeiranova.jpg
+round_table_2.tscn::PackedScene::4928686448915827047::1788027830::0::1::::<><><>0<>0<><>::uid://cy6yaih4mo5ki::::res://glb_models/RoundTable2.glb<>uid://ijumdkukp1oy::::res://texturas/madeiranova.jpg
+round_table_3.tscn::PackedScene::5864960078030104215::1788028102::0::1::::<><><>0<>0<><>::uid://dobfy0etu1wvq::::res://glb_models/RoundTable3.glb<>uid://ijumdkukp1oy::::res://texturas/madeiranova.jpg
+round_table_4.tscn::PackedScene::3745105753845961761::1788028153::0::1::::<><><>0<>0<><>::uid://iiou5v342u20::::res://glb_models/RoundTable4.glb<>uid://ijumdkukp1oy::::res://texturas/madeiranova.jpg
+simplebarrel.tscn::PackedScene::8515701010478491766::1788125379::0::1::::<><><>0<>0<><>::uid://buu80rfwhlqvm::::res://glb_models/simplebarrel_barrel_color.png<>uid://bdwlwqvx3lefl::::res://glb_models/simplebarrel_barrel_normal.png
+square_table.tscn::PackedScene::7102930787514030561::1788027219::0::1::::<><><>0<>0<><>::uid://b1ovorl4jhi46::::res://glb_models/SquareTable.glb<>uid://ijumdkukp1oy::::res://texturas/madeiranova.jpg
+woden_chair.tscn::PackedScene::6945412103263954015::1788126664::0::1::::<><><>0<>0<><>::uid://hp2vb47mgv5b::::res://glb_models/wodenChair_Bar Set Base Color.png
+woden_mug.tscn::PackedScene::3890450722058533710::1788126777::0::1::::<><><>0<>0<><>::uid://hvvf5fc6vcc4::::res://texturas/wodenMug_Bar Set Base Color.png
+::res://scripts/::1788949904
+Porta.cs::CSharpScript::469264936538762025::1788133172::0::1::::<>Node<><>0<>0<><>::
+::res://texturas/::1788126403
+madeiranova.jpg::CompressedTexture2D::581326092213771636::1780254618::1780255026::1::::<><><>0<>0<>da330e7d80ebf41dcb3a97b9d7b239df<>res://.godot/imported/madeiranova.jpg-2e13874145f089f07179fe4b1adb2c26.s3tc.ctex::
+madeira_escura.jpg::CompressedTexture2D::4445736305817268535::1780254622::1780255001::1::::<><><>0<>0<>328f83af842347a8d56876bf9ac5646d<>res://.godot/imported/madeira_escura.jpg-c3d2468280aa7f26ec10ce8710a0e7d0.s3tc.ctex::
+madeira_navio.jpg::CompressedTexture2D::5769532279157373140::1776237982::1780255035::1::::<><><>0<>0<>c26675857bd531f5cdd169b476b11649<>res://.godot/imported/madeira_navio.jpg-b947de5a35487c1613a5c8c527644aaf.s3tc.ctex::
+madeira_navio_preto.png::CompressedTexture2D::1554072297713354278::1776237996::1780255074::1::::<><><>0<>0<>6f69154310245ceb3c1fd4a62d8d2e77<>res://.godot/imported/madeira_navio_preto.png-e1bef97c2673415547871e3ee09926e0.s3tc.ctex::
+madeira_risco.jpg::CompressedTexture2D::4867869197255698392::1780254636::1780255043::1::::<><><>0<>0<>66ff15be06832ba69da7ebc0813f7997<>res://.godot/imported/madeira_risco.jpg-2699ba57cdbf45e69fa662b7aff01ed9.s3tc.ctex::
+wodenMug_Bar Set Base Color.png::CompressedTexture2D::535959407676753665::1788126375::1788126403::1::::<><><>0<>0<>ad8a7f476ff6ad44d6444c9d98f5aaa1<>res://.godot/imported/wodenMug_Bar Set Base Color.png-85e3707c47fe6ca461e4f9cf3f002ceb.s3tc.ctex::
+::res://ui/::1790085127
+Beer.png::CompressedTexture2D::444274125944893594::1789127787::1789127788::1::::<><><>0<>0<>b79bfc7029df5f7a2b934636160c8eb4<>res://.godot/imported/Beer.png-26002af7999c472ffadfa48cf1150ac4.ctex::
+control.tscn::PackedScene::8151510291600827157::1790080737::0::1::::<><><>0<>0<><>::uid://vutc8lq14qd5::::res://ui/Menu.cs<>uid://brd43i4c3lu3y::::res://ui/ui_theme.tres<>uid://bctmt6ppjhl1a::::res://ui/credits.tscn<>uid://1uh8bdrtchhy::::res://ui/options.tscn
+Credits.cs::CSharpScript::7008895606063648034::1790078695::0::1::::<>CanvasLayer<><>0<>0<><>::
+credits.tscn::PackedScene::2566785734383459976::1790078906::0::1::::<><><>0<>0<><>::uid://brd43i4c3lu3y::::res://ui/ui_theme.tres<>uid://c64fqssda8k15::::res://ui/Credits.cs
+EnvironmentSettingsApplier.cs::CSharpScript::4934063433359321737::1790079472::0::1::::<>Node<><>0<>0<><>::
+Menu.cs::CSharpScript::1516412216956521484::1790078697::0::1::::<>Node<><>0<>0<><>::
+Options.cs::CSharpScript::8914009410036768780::1790085103::0::1::::<>Control<><>0<>0<><>::
+options.tscn::PackedScene::1866681497773907266::1790085127::0::1::::<><><>0<>0<><>::uid://brd43i4c3lu3y::::res://ui/ui_theme.tres<>uid://d0aaoyedmau2g::::res://ui/Options.cs<>uid://glheohmipqe1::::res://ui/Beer.png
+SettingsManager.cs::CSharpScript::7636695134685851281::1790079466::0::1::::<>Node<><>0<>0<><>::
+ui_theme.tres::Theme::3587635418936269368::1788956035::0::1::::<><><>0<>0<><>::uid://bko6jbgbh2eik::::res://materiais/font/Trebuchet-MS-Italic.ttf<>uid://66j3x88tqtwl::::res://font/Trebuchet-MS-Italic.ttf
+::res://ui/font/::1788953625
+trebuc.ttf::FontFile::6203724928157318951::1788953625::1788953625::1::::<><><>0<>0<>63ad61fab3964a5f50cbaa1c8a86a923<>res://.godot/imported/trebuc.ttf-9072115652c9c43f87e6ec15ea559360.fontdata::
+Trebuchet-MS-Italic.ttf::FontFile::6571540325703415336::1788953625::1788953625::1::::<><><>0<>0<>00bb23c1f35561e31bb3e8915651709a<>res://.godot/imported/Trebuchet-MS-Italic.ttf-5b7852eef3d1883bfbe0aec1f2e68f3d.fontdata::

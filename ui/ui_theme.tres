@@ -1,0 +1,11 @@
+[gd_resource type="Theme" format=3 uid="uid://brd43i4c3lu3y"]
+
+[ext_resource type="FontFile" uid="uid://bko6jbgbh2eik" path="res://materiais/font/Trebuchet-MS-Italic.ttf" id="1_udl1o"]
+[ext_resource type="FontFile" uid="uid://66j3x88tqtwl" path="res://font/Trebuchet-MS-Italic.ttf" id="2_4mq11"]
+
+[resource]
+Button/colors/font_hover_color = Color(0.23694736, 0.5239547, 0.39002818, 1)
+Button/fonts/font = ExtResource("1_udl1o")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/font_sizes/font_size = 20
+Label/fonts/font = ExtResource("2_4mq11")

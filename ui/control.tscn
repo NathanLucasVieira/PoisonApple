@@ -1,0 +1,204 @@
+[gd_scene format=3 uid="uid://doewgiglj240h"]
+
+[ext_resource type="Script" uid="uid://vutc8lq14qd5" path="res://ui/Menu.cs" id="1_62e2m"]
+[ext_resource type="Theme" uid="uid://brd43i4c3lu3y" path="res://ui/ui_theme.tres" id="2_62e2m"]
+[ext_resource type="PackedScene" uid="uid://bctmt6ppjhl1a" path="res://ui/credits.tscn" id="3_rwsqr"]
+[ext_resource type="PackedScene" uid="uid://1uh8bdrtchhy" path="res://ui/options.tscn" id="4_qh227"]
+
+[sub_resource type="Gradient" id="Gradient_6a6wx"]
+offsets = PackedFloat32Array(0, 0.34219265, 0.56478405)
+colors = PackedColorArray(5.4147097e-07, 0.20036921, 4.813075e-08, 1, 0.26364002, 0.4967556, 0.23024738, 1, 0.21392688, 0.41047853, 0.18577033, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fj5cn"]
+gradient = SubResource("Gradient_6a6wx")
+fill = 3
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kbped"]
+texture = SubResource("GradientTexture2D_fj5cn")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_elkka"]
+bg_color = Color(0.0768358, 0.07683582, 0.076835774, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0.36862746, 0, 0.03529412, 0.8509804)
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+border_color = Color(0.36858487, 5.856911e-05, 0.03577188, 0.8509804)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+corner_detail = 5
+
+[node name="Menu" type="Control" unique_id=2010789112]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_62e2m")
+
+[node name="Panel" type="Panel" parent="." unique_id=45071672]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_kbped")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1744176128]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.65900004
+anchor_top = 0.162
+anchor_right = 0.85800004
+anchor_bottom = 0.23500001
+offset_left = -0.16802979
+offset_top = 0.024002075
+offset_right = -0.41601563
+offset_bottom = -0.28001404
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_62e2m")
+theme_override_colors/font_color = Color(0.89807266, 0, 0.2109828, 1)
+theme_override_colors/font_shadow_color = Color(0.14576563, 0.47524148, 0.43690726, 0)
+theme_override_colors/font_outline_color = Color(0.8851773, 0.38303816, 0.5296371, 1)
+theme_override_font_sizes/font_size = 40
+text = "Poison Apple"
+metadata/_edit_use_anchors_ = true
+
+[node name="Version" type="RichTextLabel" parent="Panel" unique_id=2062475229]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8892987
+anchor_top = 0.90867907
+anchor_right = 0.96629864
+anchor_bottom = 0.945679
+offset_left = -0.4720459
+offset_top = 0.17596436
+offset_right = -0.17602539
+offset_bottom = 0.2000122
+text = "Version 1.0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Play" type="Button" parent="." unique_id=1990098755]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.085
+anchor_top = 0.44300002
+anchor_right = 0.261
+anchor_bottom = 0.54300004
+offset_left = 0.08000183
+offset_top = -0.06402588
+offset_right = -16.671997
+offset_bottom = 0.13598633
+grow_vertical = 2
+scale = Vector2(1.090796, 0.99415284)
+theme = ExtResource("2_62e2m")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.36862746, 0, 0.03529412, 0.8509804)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_elkka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_elkka")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_elkka")
+text = "Play
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Options" type="Button" parent="." unique_id=1344062459]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.086
+anchor_top = 0.558
+anchor_right = 0.263
+anchor_bottom = 0.65800005
+offset_left = -0.072006226
+offset_top = -0.08401489
+offset_right = -17.976013
+offset_bottom = 0.1159668
+grow_vertical = 2
+scale = Vector2(1.0984455, 0.99415284)
+theme = ExtResource("2_62e2m")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.36862746, 0, 0.03529412, 0.8509804)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_elkka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_elkka")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_elkka")
+text = "Options
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Credits" type="Button" parent="." unique_id=1192014458]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.085999995
+anchor_top = 0.6787716
+anchor_right = 0.263
+anchor_bottom = 0.7787717
+offset_left = -0.072006226
+offset_top = 0.15597534
+offset_right = -17.976013
+offset_bottom = 0.35595703
+scale = Vector2(1.0984455, 0.99415284)
+theme = ExtResource("2_62e2m")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.36862746, 0, 0.03529412, 0.8509804)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_elkka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_elkka")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_elkka")
+text = "Credits"
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="." unique_id=1315858949]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.086
+anchor_top = 0.79914194
+anchor_right = 0.263
+anchor_bottom = 0.899142
+offset_left = -0.072006226
+offset_top = 0.15600586
+offset_right = -17.976013
+offset_bottom = 0.35595703
+scale = Vector2(1.0984455, 0.99415284)
+theme = ExtResource("2_62e2m")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.36862746, 0, 0.03529412, 0.8509804)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_elkka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_elkka")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_elkka")
+text = "Quit"
+metadata/_edit_use_anchors_ = true
+
+[node name="CreditsPage" parent="." unique_id=2114734641 instance=ExtResource("3_rwsqr")]
+visible = false
+
+[node name="options" parent="." unique_id=885669000 instance=ExtResource("4_qh227")]
+visible = false
+layout_mode = 1
+
+[node name="Return" parent="options" index="24" unique_id=1185095052]
+text = "Return"
+
+[editable path="CreditsPage"]
+[editable path="options"]

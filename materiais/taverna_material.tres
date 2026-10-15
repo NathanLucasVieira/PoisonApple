@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cghqktaqvea4b"]
+
+[ext_resource type="Texture2D" uid="uid://ijumdkukp1oy" path="res://texturas/madeiranova.jpg" id="1_x158a"]
+
+[resource]
+albedo_color = Color(0.68669236, 0.44273132, 0.19776842, 1)
+albedo_texture = ExtResource("1_x158a")
+metallic = 0.35
+metallic_specular = 0.1
+uv1_scale = Vector3(2.398, 2, 2)

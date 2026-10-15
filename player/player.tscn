@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://r8qnwksfvgse"]
+
+[ext_resource type="Script" uid="uid://3eqjey1eh2vj" path="res://player/Player.cs" id="1_oul6g"]
+[ext_resource type="Script" uid="uid://bbm8rj05pb7ga" path="res://player/FpCam.cs" id="2_g1dw6"]
+[ext_resource type="Script" uid="uid://coycomyun21ki" path="res://player/PlayerInteract.cs" id="3_g1dw6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kqu6x"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_oul6g"]
+
+[node name="player" type="CharacterBody3D" unique_id=239233463]
+script = ExtResource("1_oul6g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1080544516]
+shape = SubResource("CapsuleShape3D_kqu6x")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=767817409]
+mesh = SubResource("CapsuleMesh_oul6g")
+
+[node name="head" type="Node3D" parent="." unique_id=794335390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72188675, 0)
+script = ExtResource("2_g1dw6")
+
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=1119110029]
+
+[node name="RayCast3D" type="RayCast3D" parent="head" unique_id=2146894621]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+target_position = Vector3(0, -1.5, 0)
+script = ExtResource("3_g1dw6")

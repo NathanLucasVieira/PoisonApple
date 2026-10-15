@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://bld0ruika6nbm"]
+
+[ext_resource type="Script" uid="uid://gxkywbhg6qhd" path="res://scripts/Porta.cs" id="1_iiejp"]
+[ext_resource type="Texture2D" uid="uid://ijumdkukp1oy" path="res://texturas/madeiranova.jpg" id="2_xiaa6"]
+[ext_resource type="Texture2D" uid="uid://we2lxkobfyj3" path="res://texturas/madeira_navio_preto.png" id="3_osf3o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g4y42"]
+albedo_texture = ExtResource("2_xiaa6")
+uv1_scale = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ai34y"]
+size = Vector3(1, 2.5465088, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xdib2"]
+data = PackedVector3Array(-0.5, 1.2732999, 0.5, 0.5, 1.2732999, 0.5, -0.5, -1.2732999, 0.5, 0.5, 1.2732999, 0.5, 0.5, -1.2732999, 0.5, -0.5, -1.2732999, 0.5, 0.5, 1.2732999, -0.5, -0.5, 1.2732999, -0.5, 0.5, -1.2732999, -0.5, -0.5, 1.2732999, -0.5, -0.5, -1.2732999, -0.5, 0.5, -1.2732999, -0.5, 0.5, 1.2732999, 0.5, 0.5, 1.2732999, -0.5, 0.5, -1.2732999, 0.5, 0.5, 1.2732999, -0.5, 0.5, -1.2732999, -0.5, 0.5, -1.2732999, 0.5, -0.5, 1.2732999, -0.5, -0.5, 1.2732999, 0.5, -0.5, -1.2732999, -0.5, -0.5, 1.2732999, 0.5, -0.5, -1.2732999, 0.5, -0.5, -1.2732999, -0.5, 0.5, 1.2732999, 0.5, -0.5, 1.2732999, 0.5, 0.5, 1.2732999, -0.5, -0.5, 1.2732999, 0.5, -0.5, 1.2732999, -0.5, 0.5, 1.2732999, -0.5, -0.5, -1.2732999, 0.5, 0.5, -1.2732999, 0.5, -0.5, -1.2732999, -0.5, 0.5, -1.2732999, 0.5, 0.5, -1.2732999, -0.5, -0.5, -1.2732999, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_53et0"]
+albedo_texture = ExtResource("3_osf3o")
+metallic = 0.6
+metallic_specular = 0.0
+uv1_scale = Vector3(2, 2, 2)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_n5bth"]
+height = 1.3554688
+radial_segments = 24
+
+[sub_resource type="Animation" id="Animation_iiejp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dobradica:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xdib2"]
+resource_name = "closeDoor"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dobradica:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5707964, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_sw2vl"]
+resource_name = "openDoor"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dobradica:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xiaa6"]
+_data = {
+&"RESET": SubResource("Animation_iiejp"),
+&"closeDoor": SubResource("Animation_xdib2"),
+&"openDoor": SubResource("Animation_sw2vl")
+}
+
+[node name="porta" type="Node3D" unique_id=53539899]
+script = ExtResource("1_iiejp")
+
+[node name="dobradica" type="Node3D" parent="." unique_id=317625576]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.60418993, 0.88158596, 0)
+
+[node name="portaPequena" type="MeshInstance3D" parent="dobradica" unique_id=395827038]
+transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 0.1, 0.5163993, -0.07207036, 0)
+material_override = SubResource("StandardMaterial3D_g4y42")
+mesh = SubResource("BoxMesh_ai34y")
+
+[node name="door" type="StaticBody3D" parent="dobradica/portaPequena" unique_id=159173062]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="dobradica/portaPequena/door" unique_id=1668796822]
+shape = SubResource("ConcavePolygonShape3D_xdib2")
+
+[node name="macaneta" type="Node3D" parent="dobradica" unique_id=1287171436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5163993, -0.88158596, 0)
+
+[node name="macaNetaP" type="MeshInstance3D" parent="dobradica/macaneta" unique_id=1402120783]
+transform = Transform3D(0.1, 0, 0, 0, -4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0.40646744, 0.96244323, 0.11495079)
+material_override = SubResource("StandardMaterial3D_53et0")
+mesh = SubResource("CylinderMesh_n5bth")
+
+[node name="macaNetaP2" type="MeshInstance3D" parent="dobradica/macaneta" unique_id=1586378310]
+transform = Transform3D(0.1, 0, 0, 0, -4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0.40646744, 0.96244323, -0.12025505)
+material_override = SubResource("StandardMaterial3D_53et0")
+mesh = SubResource("CylinderMesh_n5bth")
+
+[node name="macaNetaP3" type="MeshInstance3D" parent="dobradica/macaneta" unique_id=1236881601]
+transform = Transform3D(0.155, 0, 0, 0, -2.6226832e-09, -0.15, 0, 0.06, -6.5567085e-09, 0.40646744, 0.96244323, 0.14282516)
+material_override = SubResource("StandardMaterial3D_53et0")
+mesh = SubResource("CylinderMesh_n5bth")
+
+[node name="macaNetaP4" type="MeshInstance3D" parent="dobradica/macaneta" unique_id=1176107777]
+transform = Transform3D(0.155, 0, 0, 0, -2.6226832e-09, -0.15, 0, 0.06, -6.5567085e-09, 0.40646744, 0.96244323, -0.15251447)
+material_override = SubResource("StandardMaterial3D_53et0")
+mesh = SubResource("CylinderMesh_n5bth")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2040329584]
+libraries/ = SubResource("AnimationLibrary_xiaa6")

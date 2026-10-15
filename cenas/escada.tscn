@@ -1,0 +1,63 @@
+[gd_scene format=4 uid="uid://c2r6mooo04yh6"]
+
+[ext_resource type="Texture2D" uid="uid://ijumdkukp1oy" path="res://texturas/madeiranova.jpg" id="1_ipghl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5nm"]
+albedo_color = Color(0.68669236, 0.44273132, 0.19776842, 1)
+albedo_texture = ExtResource("1_ipghl")
+metallic = 0.35
+metallic_specular = 0.1
+uv1_scale = Vector3(2.398, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_raoxq"]
+resource_name = "Material"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hheik"]
+_surfaces = [{
+"aabb": AABB(0.24165413, -1, -1, 0.75834584, 0.18970531, 2),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAACAAMAAwABAAQABQAEAAEABQADAAQABQABAAYAAAAGAAEAAAADAAcABgAIAAUAAwAJAAcACQADAAUACQAAAAcACQAFAAgABgAAAAoACQAKAAAABgAKAAsACQALAAoABgALAAgACQAIAAsA"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAP//AAD//1CP//8AAP//AAD//wAA//8AAAAAAAD//1CPAAAAAK6BUI8AAAAAroFQj///AAAAAAAAAAAAAK6B//8AAAAAAAD//wAAAAAAAP///v8AAK6B/////wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_52y30"]
+resource_name = "escada_Cube"
+_surfaces = [{
+"aabb": AABB(0.24165413, -1, -1, 0.75834584, 0.18970531, 2),
+"attribute_data": PackedByteArray("/1+7J2Vj/z//X/8/ZWMGNBFmuycRZgY0/1//f2Vj/z9lY/9//1//P/9f0fimYnzH/198x6Zi0fj/H4J4hlwtR/8fLUeGXIJ4u0f/P/9f/3+7R/9//1//Pw4hgngyXy1HDiEtRzJfgnjnaMx+lGPgRJRjzH7naOBE/1//fxFmQ5j/X0OYZWP4i2Vj/38RZviL"),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAAAAQAAwAEAAUABgAHAAgABgAJAAcACgALAAwACgANAAsADgAPABAADgARAA8AEgATABQAEgAVABMAFgAXABgAFgAZABcAGgAbABwAGgAdABsAHgAfACAAHwAeACEAIQAeACIAHwAhACMA"),
+"material": SubResource("StandardMaterial3D_raoxq"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AAAAAP///7///1CP////v///AAD///+/roFQj////78AAP///v//v66B//////+///8AAAAAVNX//1CP//9U1f//UI8AAFTV//8AAP//VNWugVCP//+qKq6B//8AAKoqroFQjwAAqiqugf////+qKq6BUI8AAP8///9Qj////z+ugVCP////P///UI8AAP8/AAAAAP///7///wAAAAD/vwAAAAAAAP+///8AAP///78AAP//AAD/P66B//////8/AAD///7//z+ugf//AAD/PwAA//8AAKoqAAAAAP//qioAAAAAAACqKgAA///+/6oq//8AAAAA//8AAP//AAD//wAAAAAAAP//roFQjwAA/////1CPAAD//66B//8AAP//////////////////////////////////qiqqKqoqqiqqKqoqqiqqKqoqqiqqKqoqqiqqKqoqqir+//9//v//f/7//3/+//9/AAD/fwAA/38AAP9/AAD/f/7//3/+//9//v//f/7//39U1VTVVNVU1VTVVNVU1VTV/7//v/+//7//v/+//7//v/+//7//v/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_hheik")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_y8mcl"]
+points = PackedVector3Array(1, -0.89380145, 1, 0.6258005, -0.8102947, 1, 1, -1, 1, 1, -0.89380145, -1, 0.6258005, -0.8102947, -1, 0.24165413, -0.8102947, 0.99980426, 0.24165413, -1, 1, 1, -1, -1, 0.24165413, -0.8102947, -1, 0.24165413, -1, -1)
+
+[node name="escada" type="Node3D" unique_id=1525790610]
+
+[node name="Cube" type="MeshInstance3D" parent="." unique_id=1310997065]
+transform = Transform3D(1.3984058, 0, 0, 0, 2.5148737, 0, 0, 0, 0.6642278, 0, 3.5086274, 0)
+material_override = SubResource("StandardMaterial3D_gv5nm")
+mesh = SubResource("ArrayMesh_52y30")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" unique_id=553662135]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" unique_id=314125442]
+shape = SubResource("ConvexPolygonShape3D_y8mcl")

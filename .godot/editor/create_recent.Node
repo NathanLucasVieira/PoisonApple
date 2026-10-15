@@ -1,0 +1,15 @@
+SpinBox
+CharacterBody3D
+ColorRect
+Control
+CollisionShape3D
+StaticBody3D
+OptionButton
+HSlider
+RichTextLabel
+CanvasLayer
+Panel
+Button
+MenuButton
+CheckButton
+Label

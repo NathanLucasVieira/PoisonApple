@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://bctmt6ppjhl1a"]
+
+[ext_resource type="Theme" uid="uid://brd43i4c3lu3y" path="res://ui/ui_theme.tres" id="1_ed0b0"]
+[ext_resource type="Script" uid="uid://c64fqssda8k15" path="res://ui/Credits.cs" id="1_orljq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ed0b0"]
+bg_color = Color(0.0768358, 0.07683582, 0.076835774, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0.36862746, 0, 0.03529412, 0.8509804)
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_orljq"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+border_color = Color(0.36858487, 5.856911e-05, 0.03577188, 0.8509804)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+corner_detail = 5
+
+[node name="CreditsPage" type="CanvasLayer" unique_id=2114734641]
+script = ExtResource("1_orljq")
+
+[node name="Return" type="Button" parent="." unique_id=312563968]
+anchors_preset = -1
+anchor_left = 0.85200006
+anchor_top = 0.07700001
+anchor_right = 0.943
+anchor_bottom = 0.133
+offset_left = -0.5041504
+offset_top = 0.10399628
+offset_right = 172.85083
+offset_bottom = 47.29061
+scale = Vector2(0.377444, 0.4330265)
+theme = ExtResource("1_ed0b0")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.09803922, 0.21568628, 0.09803922, 0.8509804)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ed0b0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_orljq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ed0b0")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ed0b0")
+text = "X
+"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=54538154]
+anchors_preset = -1
+anchor_left = 0.44479167
+anchor_top = 0.0692963
+anchor_right = 0.6817917
+anchor_bottom = 0.19091359
+offset_left = -0.4000244
+offset_top = -7.904003
+offset_right = 0.57592773
+offset_bottom = 0.28799438
+grow_horizontal = 2
+theme = ExtResource("1_ed0b0")
+theme_override_font_sizes/normal_font_size = 50
+text = "Credits"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1908693355]
+anchors_preset = -1
+anchor_left = 0.034020834
+anchor_top = 0.20201236
+anchor_right = 1.0048611
+anchor_bottom = 1.0187901
+offset_left = 1.8079987
+offset_top = -3.904007
+offset_right = 2.4000244
+offset_bottom = -4.1760254
+theme = ExtResource("1_ed0b0")
+theme_override_font_sizes/normal_font_size = 30
+text = "Game made with Love and Curiosity by:
+Nathan Lucas
+
+Programming:
+Nathan Lucas
+
+Engine:
+Godot 4.7
+
+Thank you for playing!
+"
+metadata/_edit_use_anchors_ = true
